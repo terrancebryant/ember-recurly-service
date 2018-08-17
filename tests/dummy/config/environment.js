@@ -21,6 +21,12 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
+    
+  };
+
+  ENV.recurly = {
+    publicKey: 'pk_thisIsATestKey',
+    lazyload: true
   };
 
   if (environment === 'development') {
