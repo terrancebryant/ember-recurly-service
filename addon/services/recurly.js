@@ -10,12 +10,10 @@ export default Service.extend({
   publicKey: readOnly('config.publicKey'),
 
   load() {
-    const lazyload = get(this, 'lazyload');
+    const lazyLoad = get(this, 'lazyLoad');
     const loadScript = lazyLoad ? loadRecurlyScript('https://js.recurly.com/v4/recurly.js') : null;
     return loadScript.then(() => {
-      console.log('loaded')
-    }).catch((error) => {
-      console.log(error);
+      console.log('Script has been loaded')
     })
   }
 });
