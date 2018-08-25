@@ -53,5 +53,10 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "eslintConfig": {
+    "globals": {
+        "recurly": true
+    }
+}
 }

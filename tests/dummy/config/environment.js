@@ -25,7 +25,7 @@ module.exports = function(environment) {
   };
 
   ENV.recurly = {
-    publicKey: 'pk_thisIsATestKey',
+    publicKey: 'sc-ABCDEFGHI123456789',
     lazyload: true
   };
 
